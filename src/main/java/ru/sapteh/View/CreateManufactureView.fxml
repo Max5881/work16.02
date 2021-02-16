@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="207.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.CreateManufactureViewController">
+   <children>
+      <Button fx:id="createButton" layoutX="86.0" layoutY="225.0" mnemonicParsing="false" text="Create" />
+      <Button fx:id="ExitButton" layoutX="244.0" layoutY="225.0" mnemonicParsing="false" text="Exit" />
+      <TextField fx:id="nameTextField" layoutX="205.0" layoutY="70.0" />
+      <TextField fx:id="startDateTextField" layoutX="205.0" layoutY="119.0" />
+      <Label layoutX="72.0" layoutY="74.0" text="Name" />
+      <Label layoutX="72.0" layoutY="123.0" text="Start Date" />
+   </children>
+</AnchorPane>

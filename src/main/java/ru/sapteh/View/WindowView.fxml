@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="400.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.WindowViewController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Manufacture">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="394.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="ManufactureTableView" layoutY="-2.0" prefHeight="374.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="idManufactureColumn" prefWidth="75.0" text="Id" />
+                              <TableColumn fx:id="nameManufactureColumn" prefWidth="75.0" text="Name" />
+                              <TableColumn fx:id="startDateManufactureColumn" prefWidth="75.0" text="Start Date" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Product">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="productTableView" prefHeight="374.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="idProductColumn" prefWidth="75.0" text="Id" />
+                              <TableColumn fx:id="titleProductColumn" prefWidth="75.0" text="Title" />
+                              <TableColumn fx:id="costProductColumn" prefWidth="75.0" text="Cost" />
+                              <TableColumn fx:id="descriptionProductColumn" prefWidth="75.0" text="Description" />
+                              <TableColumn fx:id="imagePathProductColumn" prefWidth="75.0" text="Main Image Path" />
+                              <TableColumn fx:id="isActiveProductColumn" prefWidth="75.0" text="Is Active" />
+                              <TableColumn fx:id="manufactureProductColumn" prefWidth="75.0" text="Manufacturer Id" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Product Sale">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="productSaleTableView" prefHeight="373.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="saleDateProductSaleColumn" prefWidth="75.0" text="Sale Date" />
+                              <TableColumn fx:id="productIdProductSaleColumn" prefWidth="75.0" text="Product Id" />
+                              <TableColumn fx:id="qouantityProductSaleColumn" prefWidth="75.0" text="Qouantity" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="createManufactureButton" layoutX="599.0" layoutY="22.0" mnemonicParsing="false" text="Create new Manufacture" />
+      <Button fx:id="deleteManufactureButton" layoutX="599.0" layoutY="53.0" mnemonicParsing="false" text="Delete Manufacture" />
+      <Button fx:id="updateManufactureButton" layoutX="599.0" layoutY="84.0" mnemonicParsing="false" text="Update Manufacture" />
+      <Button fx:id="createProductButton" layoutX="599.0" layoutY="175.0" mnemonicParsing="false" text="Create new Product" />
+      <Button fx:id="deleteProductButton" layoutX="599.0" layoutY="210.0" mnemonicParsing="false" text="Delete Product" />
+      <Button fx:id="updateProductButton" layoutX="600.0" layoutY="241.0" mnemonicParsing="false" text="Update Product" />
+      <Button fx:id="createProductSaleButton" layoutX="600.0" layoutY="308.0" mnemonicParsing="false" text="Create new Product Sale" />
+      <Button fx:id="deleteProductSaleButton" layoutX="600.0" layoutY="340.0" mnemonicParsing="false" text="Delete Product Sale" />
+      <Button fx:id="updateProductSaleButton" layoutX="600.0" layoutY="374.0" mnemonicParsing="false" text="Update Product Sale" />
+   </children>
+</Pane>
